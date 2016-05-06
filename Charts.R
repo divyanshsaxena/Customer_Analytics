@@ -4,14 +4,14 @@ mongo <- mongo.create()
 mongo
 mongo.is.connected(mongo)
 mongo.get.databases(mongo)
-db <- "adapty"
+db <- "ad"
 mongo.get.database.collections(mongo, db)
-srvspl2 <- "adapty.sr"
+srvspl2 <- "ad.sr"
 cityone <- mongo.find.all(mongo, srvspl2)
 print(cityone)
 
 
-SearchResultvsProductListing1 <- read.csv("C:/Users/Divyansh/Desktop/Work/Adapty/Data/SearchResultvsProductListing1.csv", stringsAsFactors=FALSE)
+SearchResultvsProductListing1 <- read.csv("/SearchResultvsProductListing1.csv", stringsAsFactors=FALSE)
 View(SearchResultvsProductListing1)
 srvspl <- SearchResultvsProductListing1
 srvspl$Date <- as.Date(srvspl$Date)
